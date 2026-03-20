@@ -13,6 +13,7 @@ import Withdrawals from "./pages/Withdrawals";
 import Contests from "./pages/Contests";
 import Notifications from "./pages/Notifications";
 import AdminPanel from "./pages/AdminPanel";
+import DemoLogin from "./pages/DemoLogin";
 
 function Router() {
   return (
@@ -26,6 +27,7 @@ function Router() {
       <Route path="/contests" component={Contests} />
       <Route path="/notifications" component={Notifications} />
       <Route path="/admin" component={AdminPanel} />
+      <Route path="/demo-login" component={DemoLogin} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>

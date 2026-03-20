@@ -132,6 +132,9 @@ export default function Home() {
             <span className="font-display font-bold text-xl text-foreground">EarnBucks</span>
           </Link>
           <div className="flex items-center gap-3">
+            <Link href="/demo-login" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+              Demo
+            </Link>
             <a href={getLoginUrl()} className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               Login
             </a>
@@ -167,15 +170,18 @@ export default function Home() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-              <a href={getLoginUrl()}>
+              <Link href="/demo-login">
                 <Button size="lg" className="gradient-primary text-white border-0 shadow-glow hover:opacity-90 text-lg px-8 py-6 h-auto">
-                  Start Earning Instantly
+                  Try Demo
+                  <ChevronRight className="ml-2 w-5 h-5" />
+                </Button>
+              </Link>
+              <a href={getLoginUrl()}>
+                <Button size="lg" variant="outline" className="border-white/20 text-white bg-white/10 hover:bg-white/20 text-lg px-8 py-6 h-auto">
+                  Sign Up Free
                   <ChevronRight className="ml-2 w-5 h-5" />
                 </Button>
               </a>
-              <Button size="lg" variant="outline" className="border-white/20 text-white bg-white/10 hover:bg-white/20 text-lg px-8 py-6 h-auto">
-                See Payment Proof
-              </Button>
             </div>
 
             <div className="flex flex-wrap items-center justify-center gap-6 text-white/60 text-sm">
